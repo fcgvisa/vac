@@ -1,0 +1,23 @@
+<ul>
+  <li class="{% if page.overview %}current{% endif %}">
+    <a href="/">首页</a>
+  </li>
+  <li class="{% if page.url contains '/docs/ca/' %}current{% endif %}">
+    <a href="/docs/ca/">加拿大</a>
+  </li>
+  <li class="{% if page.url contains '/docs/au/' %}current{% endif %}">
+    <a href="/docs/au/">澳洲</a>
+  </li>
+  <li class="{% if page.url contains '/docs/nz/' %}current{% endif %}">
+    <a href="/docs/nz/">新西兰</a>
+  </li>
+  <li class="{% if page.url contains '/docs/us/' %}current{% endif %}">
+    <a href="/docs/us/">美国</a>
+  </li>
+  <!-- <a href=""><li class="{% if page.url contains '/docs/eu/' %}current{% endif %}">
+    <a href="/docs/eu/">欧洲</a>
+  </li></a> -->
+  <li>
+    <a href="{{ site.bbs }}">论坛</a>
+  </li>
+</ul>
